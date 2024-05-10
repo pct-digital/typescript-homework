@@ -20,3 +20,5 @@ You need node installed on your local machine to work through these tutorials. I
       - `mv nx-ts/* .`
       - `mv nx-ts/.* .`
       - `rmdir nx-ts`
+1.  `npx nx add node`
+1.  `npx nx add @nx/node`
