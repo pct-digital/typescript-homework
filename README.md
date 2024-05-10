@@ -32,3 +32,6 @@ You need node installed on your local machine to work through these tutorials. I
     - Select webpack as the bunderler, as that is the bundler we use in all of our projects
     - Click "Generate"
     - You can delete the apps/ts-app-e2e folder, we will not be doing e2e tests here
+1.  Start your application
+    - You may need to do `npx nx reset` first, as creating so many files at once sometimes causes issues with the NX Daemon.
+    - Now you can start your app: `npx nx run ts-app:serve`
