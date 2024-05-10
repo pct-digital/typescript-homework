@@ -1,0 +1,24 @@
+{
+  "name": "ts-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ts-app/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ts-app:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ts-app:build:development"
+        },
+        "production": {
+          "buildTarget": "ts-app:build:production"
+        }
+      }
+    }
+  }
+}

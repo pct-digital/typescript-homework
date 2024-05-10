@@ -21,4 +21,14 @@ You need node installed on your local machine to work through these tutorials. I
       - `mv nx-ts/.* .`
       - `rmdir nx-ts`
 1.  `npx nx add node`
-1.  `npx nx add @nx/node`
+1.  `npx nx add @nx/node` & `npm install`
+1.  Make sure to reload VS Code at this point & have the NX plugin installed, it will be recommended by VS Code on reload.
+1.  Create folder "apps" & run NX generate via VS Code plugin for a node project
+    - To do this right click on "app"
+    - Select NX generate
+    - Search "node"
+    - Pick the @nx/node application generator
+    - Name the application "ts-app"
+    - Select webpack as the bunderler, as that is the bundler we use in all of our projects
+    - Click "Generate"
+    - You can delete the apps/ts-app-e2e folder, we will not be doing e2e tests here
