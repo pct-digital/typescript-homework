@@ -3,18 +3,28 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
+    "noPropertyAccessFromIndexSignature": false,
     "declaration": false,
+    "strict": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "target": "es2022",
+    "module": "es2022",
+    "lib": ["ES2022", "dom"],
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@nx-ts/pct-pipeline": ["libs/pct-pipeline/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

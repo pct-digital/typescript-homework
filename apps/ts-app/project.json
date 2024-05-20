@@ -19,6 +19,9 @@
           "buildTarget": "ts-app:build:production"
         }
       }
+    },
+    "reproduction": {
+      "executor": "@nx-ts/pct-pipeline:reproduction"
     }
   }
 }

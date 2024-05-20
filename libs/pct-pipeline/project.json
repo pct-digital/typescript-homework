@@ -1,0 +1,41 @@
+{
+  "name": "pct-pipeline",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/pct-pipeline/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/pct-pipeline",
+        "main": "libs/pct-pipeline/src/index.ts",
+        "tsConfig": "libs/pct-pipeline/tsconfig.lib.json",
+        "assets": [
+          "libs/pct-pipeline/*.md",
+          {
+            "input": "./libs/pct-pipeline/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/pct-pipeline/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/pct-pipeline",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/pct-pipeline",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}

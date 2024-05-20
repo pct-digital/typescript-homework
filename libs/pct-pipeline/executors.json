@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "reproduction": {
+      "implementation": "./executor",
+      "schema": "./schema.json",
+      "description": "reproduction executor"
+    }
+  }
+}
