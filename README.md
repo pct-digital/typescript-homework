@@ -1,1 +1,4 @@
-npx nx run ts-app:reproduction
+- Checkout
+- npm install
+- Run `npx nx run ts-app:reproduction`
+- Press CTRL+C. It will instantly quiet and not print "WORK DONE", see file `libs/pct-pipeline/executor.ts`
