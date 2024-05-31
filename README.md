@@ -11,6 +11,7 @@ You need node installed on your local machine to work through these tutorials. I
 
 # Create NX Workspace
 
+1.  Create a new folder to work in
 1.  `npx create-nx-workspace nx-ts`
     - Stack: None
     - Integrated Monorepo
